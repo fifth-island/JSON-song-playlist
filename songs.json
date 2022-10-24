@@ -1,0 +1,80 @@
+[
+ {
+     "title": "Total Eclipse of the Heart",
+     "artist": "Bonnie Tyler",
+     "year": "(1983)",
+     "genres": ["Country Music", "Pop"]
+ },
+ {
+     "title": "Dark Horse",
+     "artist": "Katy Perry",
+     "year": "2013",
+     "genres": ["Pop"]
+ },
+ {
+     "title": "when the party's over",
+     "artist": "Bllie Eilish",
+     "year": "(2019)",
+     "genres": ["Pop", "Alternative/Indie"]
+ },
+ {
+     "title": "Amor Prohibido",
+     "artist": "Selena Quintanilla",
+     "year": "(1994)",
+     "genres": ["Latino", "Pop"]
+ },
+ {
+     "title": "Vai Malandra",
+     "artist": "Anitta",
+     "year": "(2018)",
+     "genres": ["Pop", "Latino"]
+ },
+ {
+     "title": "Yo Vivo para Ti",
+     "artist": "Carla Morrison",
+     "year": "(2015)",
+     "genres": ["Latino"]
+ },
+ {
+     "title": "Jolene",
+     "artist": "Dolly Parton",
+     "year": "(1974)",
+     "genres": ["Country Music"]
+ },
+ {
+     "title": "Take Me Home, Country Roads",
+     "artist": "John Denver",
+     "year": "(1971)",
+     "genres": ["Country Music"]
+ },
+ {
+     "title": "Mammas Don't Let Your Babies Grow Up To Be Cowboys",
+     "artist": "Waylon Jennings",
+     "year": "(1978)",
+     "genres": ["Country Music"]
+ },
+ {
+     "title": "O Mundo é um Moinho",
+     "artist": "Cartola",
+     "year": "(1976)",
+     "genres": ["MPB", "Latino"]
+ },
+ {
+  "title": "Cálice",
+  "artist": "Caetano Veloso",
+  "year": "(1978)",
+  "genres": ["MPB", "Latino"]
+ },
+ {
+  "title": "João e Maria",
+  "artist": "Chico Buarque",
+  "year": "(1977)",
+  "genres": ["MPB", "Latino"]
+ },
+ {
+  "title": "Flor de Tangerina",
+  "artist": "Alceu Valença",
+  "year": "(2002)",
+  "genres": ["MPB", "Latino"]
+ }
+]
