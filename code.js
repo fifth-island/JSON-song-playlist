@@ -31,7 +31,6 @@ function raw_data() {
  request.send();
  }
 
- //  Gets JSON data ready and displays it
  // Purpose: display data in a user-friendly format 
  //          - function automatically runs once the page is loaded -> using JQuery this time
  //          - creates 2 columns of songs depending on the number of songs -> I opted for keeping all columns together
@@ -47,7 +46,7 @@ function raw_data() {
           if (i == 7) { $('#playlist').append("<div class='second-column'>"); };
         $('#playlist').append(  
               "<div class='song'>"   +
-              "<span class='title'>" + object_json[i].title + "</span>" +
+              "<div class='title'>" + object_json[i].title + "</div>" +
               "<div class='artist'>" + object_json[i].artist + "</div>" +
               "<div class='year'>"   + object_json[i].year + "</div>" +
               "<div class='genres'>" + object_json[i].genres + "</div>" +
@@ -58,30 +57,25 @@ function raw_data() {
 });
 
 
-function filter_song() { 
- var request = new XMLHttpRequest();
+// Purpose: filters the songlist, printing in the HTML only songs 
+//          that are belong to the specific genre
+function select_data() {
+ // access the json file as the document to be navigated through the function
+ $.getJSON("https://fifth-island.github.io/JSON-song-playlist/songs.json", function(result) {
+ 
+ // obtains a JSON string object through the JavaScript value passing it to the string variable
+ var object_json = JSON.parse(JSON.stringify(result));
 
- request.open("GET", "https://fifth-island.github.io/JSON-song-playlist/songs.json", true);
-
- request.onreadystatechange = function() {
-     if ((request.readyState == 4) && (request.status == 200)) {
-         data = request.responseText;
-         json = JSON.parse(data);
-
-         let x = document.getElementById('filter').value;
-         var arr = [];
-         
-         json.forEach((song) => {
-             if (song.genre.includes(x)) {
-                     arr.push(song.name);
-             }
-         });
-         
-         document.getElementById("filter-products").innerHTML = arr;
-         
+ // obtain the specific genre by pulling up from the selection form 
+ var genre = document.getElementById("filter").value;
+ $('#result-data').html("<br>");
+ // iterate through the whole json object
+ for (i = 0; i < object_json.length; i++) {
+     // only print in inner HTML the song if the genre matches
+     if (object_json[i].genres.includes(genre)) {
+         $('#result-data').append(object_json[i].title + "<br><br>");
      }
- };
-
- request.send();  
-
+ }
+})
 }
+
