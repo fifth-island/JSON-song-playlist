@@ -32,8 +32,6 @@ header:hover { text-shadow: 0 0 0.10em #fff, 0 0 0.4em #fe05e1, 0 0 0.6em #fe05e
 
 .playlist .second-column { display: inline-block; width: 30vw; }
 
-
-
 .song { position: relative;
        width: 300px; height: 130px;
        margin-top:20px; margin-bottom:30px; margin-left: auto; margin-right: auto; 
@@ -57,3 +55,15 @@ header:hover { text-shadow: 0 0 0.10em #fff, 0 0 0.4em #fe05e1, 0 0 0.6em #fe05e
 
 .filtering form { margin: auto; text-align: center;}
 
+.results { width: 50%; border: white solid; margin: auto; }
+
+#result-data {color: white; text-align: center; margin: auto; font-style: italic;
+              font-weight: bolder; font-size: 20px; } 
+
+#result-data text {padding: 40px;}
+
+#raw:hover { background-image: radial-gradient(purple, black); }
+
+.filtering:hover { background-image: radial-gradient(purple, black); }
+
+#result-data:hover { background-image: radial-gradient(purple, black); }
