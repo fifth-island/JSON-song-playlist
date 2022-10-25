@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Playlist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="code.js"></script>
+
+ </head>
+
+ <body onload="raw_data()">
+  <header><br>JSON Song List 
+          <br>______________<br><br>
+     
+  </header>
+
+  <!-- Serialized data as a raw string is displayed on the screen -->
+  <div id="raw"></div>
+
+  <div class="filtering"> 
+    <form>
+       <select id="filter" >
+               <option value="Glam Rock">Glam Rock</option>
+               <option value="Rock">Rock</option>
+               <option value="Arena Rock">Arena Rock</option>
+               <option value="Folk">Folk</option>
+               <option value="Blues">Blues</option>
+               <option value="Alternative Indie">Alternative Indie</option>
+               <option value="Hard Rock">Hard Rock</option>
+               <option value="Metal">Metal</option>
+               <option value="Blues Rock">Blues Rock</option>
+               <option value="60s pop">60s pop</option>
+       </select>
+       <input type="button" value="Filter" onclick="filter_song()">
+    </form>
+    <div #id="filter-products"> </div>
+  </div>
+  
+
+  <!-- Display data in a user-friendly format -->
+  <div id="playlist"></div> <!--represent the root node, in which 2 column-nodes branch out-->
+   
+   
+
+  
+
+
+
+
+
+
+
+
+ </body>
+ </html>
