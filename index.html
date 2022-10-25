@@ -19,39 +19,27 @@
   <!-- Serialized data as a raw string is displayed on the screen -->
   <div id="raw"></div>
 
+  <!-- Display select form to choose songs of only one genre -->
   <div class="filtering"> 
     <form>
        <select id="filter" >
-               <option value="Glam Rock">Glam Rock</option>
-               <option value="Rock">Rock</option>
-               <option value="Arena Rock">Arena Rock</option>
-               <option value="Folk">Folk</option>
-               <option value="Blues">Blues</option>
-               <option value="Alternative Indie">Alternative Indie</option>
-               <option value="Hard Rock">Hard Rock</option>
-               <option value="Metal">Metal</option>
-               <option value="Blues Rock">Blues Rock</option>
-               <option value="60s pop">60s pop</option>
+               <option value="Pop">Pop</option>
+               <option value="Country Music">Country Music</option>
+               <option value="MPB">MPB</option>
+               <option value="Latino">Latino</option>
+               <option value="Alternative/Indie">Alternative Indie</option>
        </select>
-       <input type="button" value="Filter" onclick="filter_song()">
+       <input type="button" value="Filter" onclick="select_data()">
     </form>
-    <div #id="filter-products"> </div>
   </div>
   
-
+  <!-- Display the results of the filtering -->
+  <div class="results">
+   <div id="result-data"></div>
+  </div>
+  
   <!-- Display data in a user-friendly format -->
   <div id="playlist"></div> <!--represent the root node, in which 2 column-nodes branch out-->
-   
-   
-
-  
-
-
-
-
-
-
-
 
  </body>
  </html>
